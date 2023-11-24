@@ -38,6 +38,10 @@ move_up={
 ]
 }
 
+[physics]
+
+2d/physics_engine="GodotPhysics2D"
+
 [rendering]
 
 renderer/rendering_method="mobile"

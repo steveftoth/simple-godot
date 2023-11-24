@@ -1,23 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://j73hj64emnis"]
+[gd_scene load_steps=3 format=3 uid="uid://j73hj64emnis"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_43onq"]
+[ext_resource type="PackedScene" uid="uid://dnhtm23otn3tp" path="res://Background.tscn" id="2_t1ib3"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_43onq")
 
 [node name="StartButton" type="Button" parent="."]
-offset_left = 63.0
-offset_top = 34.0
-offset_right = 455.0
-offset_bottom = 227.0
+offset_left = 309.0
+offset_top = 165.0
+offset_right = 534.0
+offset_bottom = 231.0
 text = "Start"
 
 [node name="ExitButton" type="Button" parent="."]
-offset_left = 144.0
-offset_top = 373.0
-offset_right = 252.0
-offset_bottom = 462.0
+offset_left = 309.0
+offset_top = 237.0
+offset_right = 535.0
+offset_bottom = 277.0
 text = "Exit"
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_t1ib3")]
 
 [connection signal="pressed" from="StartButton" to="." method="startGame"]
 [connection signal="pressed" from="ExitButton" to="." method="exitButton"]

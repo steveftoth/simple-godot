@@ -1,5 +1,6 @@
-extends Node2D
+extends ParallaxBackground
 
+var scrolling_speed = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,11 +9,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
-
-
-func exitButton():
-	get_tree().quit()
-
-func startGame():
-	get_tree().change_scene_to_file("res://game.tscn"  )
+	scroll_offset.x -= scrolling_speed * delta
