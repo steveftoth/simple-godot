@@ -10,9 +10,11 @@ func _ready():
 func _process(delta):
 	pass
 
-
 func exitButton():
 	get_tree().quit()
 
 func startGame():
 	get_tree().change_scene_to_file("res://game.tscn"  )
+
+func startSandwich():
+	get_tree().change_scene_to_file("res://sandwich.tscn")

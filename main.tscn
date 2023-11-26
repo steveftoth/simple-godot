@@ -7,22 +7,29 @@
 script = ExtResource("1_43onq")
 
 [node name="StartButton" type="Button" parent="."]
-offset_left = 309.0
-offset_top = 165.0
-offset_right = 534.0
-offset_bottom = 231.0
-text = "Start"
+offset_left = 27.0
+offset_top = 85.0
+offset_right = 227.0
+offset_bottom = 125.0
+text = "Platforming"
 
 [node name="ExitButton" type="Button" parent="."]
-offset_left = 309.0
-offset_top = 237.0
-offset_right = 535.0
-offset_bottom = 277.0
+offset_left = 265.0
+offset_top = 85.0
+offset_right = 465.0
+offset_bottom = 125.0
 text = "Exit"
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="."]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_t1ib3")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 144.0
+offset_right = 225.0
+offset_bottom = 184.0
+text = "Sandwich"
 
 [connection signal="pressed" from="StartButton" to="." method="startGame"]
 [connection signal="pressed" from="ExitButton" to="." method="exitButton"]

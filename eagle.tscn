@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://cg8wj3257bqy2"]
+
+[ext_resource type="Texture2D" uid="uid://cmy4ryxtnt0tv" path="res://sprites/eagle/eagle-attack-1.png" id="1_gv6or"]
+[ext_resource type="Texture2D" uid="uid://7x0qc75k5yn5" path="res://sprites/eagle/eagle-attack-2.png" id="2_65bxj"]
+[ext_resource type="Texture2D" uid="uid://boe32bww26dnr" path="res://sprites/eagle/eagle-attack-3.png" id="3_b328k"]
+[ext_resource type="Texture2D" uid="uid://mmm14dtrxl5b" path="res://sprites/eagle/eagle-attack-4.png" id="4_t1gec"]
+[ext_resource type="Script" path="res://eagle.gd" id="5_yhfoc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e5ntf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gv6or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_65bxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b328k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t1gec")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_e5ntf")
+animation = &"Attack"
+script = ExtResource("5_yhfoc")
