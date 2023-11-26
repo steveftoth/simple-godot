@@ -33,3 +33,4 @@ text = "Sandwich"
 
 [connection signal="pressed" from="StartButton" to="." method="startGame"]
 [connection signal="pressed" from="ExitButton" to="." method="exitButton"]
+[connection signal="pressed" from="Button" to="." method="startSandwich"]

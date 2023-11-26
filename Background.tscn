@@ -22,6 +22,12 @@ position = Vector2(303, 55)
 [node name="CharacterBody2D2" parent="BackLayer" instance=ExtResource("3_l04qg")]
 position = Vector2(181, 134)
 
+[node name="CharacterBody2D3" parent="BackLayer" instance=ExtResource("3_l04qg")]
+position = Vector2(543, 95)
+
+[node name="CharacterBody2D4" parent="BackLayer" instance=ExtResource("3_l04qg")]
+position = Vector2(79, 85)
+
 [node name="MiddleLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.6, 0.6)
 motion_mirroring = Vector2(1225, 0)

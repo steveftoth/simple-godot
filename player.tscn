@@ -37,7 +37,6 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_01jdg"]
 
 [node name="Player" type="CharacterBody2D"]
-scale = Vector2(4, 4)
 script = ExtResource("1_0g64h")
 metadata/_edit_group_ = true
 
