@@ -12,8 +12,16 @@ config_version=5
 
 config/name="SimpleGame"
 run/main_scene="res://main.tscn"
-config/features=PackedStringArray("4.1", "Mobile")
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://global.gd"
+
+[dotnet]
+
+project/assembly_name="SimpleGame"
 
 [input]
 

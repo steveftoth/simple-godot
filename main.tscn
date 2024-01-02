@@ -31,6 +31,13 @@ offset_right = 225.0
 offset_bottom = 184.0
 text = "Sandwich"
 
+[node name="JumpsLabel" type="RichTextLabel" parent="."]
+offset_left = 32.0
+offset_top = 215.0
+offset_right = 166.0
+offset_bottom = 255.0
+text = "Jumps"
+
 [connection signal="pressed" from="StartButton" to="." method="startGame"]
 [connection signal="pressed" from="ExitButton" to="." method="exitButton"]
 [connection signal="pressed" from="Button" to="." method="startSandwich"]

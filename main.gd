@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var globals = get_node("/root/Global")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,7 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	get_node("JumpsLabel").text = str(globals.jumps)
 
 func exitButton():
 	get_tree().quit()

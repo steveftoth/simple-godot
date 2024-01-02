@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://d1y60wqxr7o54"]
+
+[ext_resource type="Script" path="res://bread.gd" id="1_jdokh"]
+[ext_resource type="Texture2D" uid="uid://2jt7oxj7nfv3" path="res://sprites/sandwich/French sheet.png" id="2_wk08v"]
+[ext_resource type="Script" path="res://bread_anim.gd" id="3_d1foh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_44rls"]
+atlas = ExtResource("2_wk08v")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2c80v"]
+atlas = ExtResource("2_wk08v")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dg5eo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_44rls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2c80v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Bread" type="Button"]
+custom_minimum_size = Vector2(32, 32)
+script = ExtResource("1_jdokh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, 16)
+sprite_frames = SubResource("SpriteFrames_dg5eo")
+frame_progress = 0.56846
+script = ExtResource("3_d1foh")
+
+[connection signal="mouse_entered" from="." to="." method="mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="mouse_exited"]
